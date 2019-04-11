@@ -53,3 +53,21 @@ Personally, the strongest part of Autopsy is the ability to find all files that 
 
 #### Download: https://www.sleuthkit.org/autopsy/download.php
 
+## Volatility Memory Forensics
+![Image of Volatility](https://www.volexity.com/wp-content/uploads/2017/03/TVP_VolatilityLogo.png)
+
+Volatility is an open source python tool for memory forensics in incident response and malware analysis. 
+
+### How to Use Volatility
+The most basic Volatility commands are constructed as shown below. Replace plugin with the name of the plugin to use, image with the file path to your memory image, and profile with the name of the profile (such as Win7SP1x64)
+```$ python vol.py [plugin] -f [image] --profile=[profile]```
+Example:
+```$ python vol.py pslist -f /path/to/memory.img --profile=Win7SP1x64```
+
+### Notes:
+* Volatility uses profiles to know what type of system your memory dump came from, so it knows which data structures, algorithms, and symbols to use.
+* Volatility's plugin architecture can load plugin files and profiles from multiple directories at once.
+* There is a lot you can do with Volatility. To find more, read here https://github.com/volatilityfoundation/volatility/wiki/Volatility-Usage
+
+#### Download: https://www.volatilityfoundation.org/26
+
