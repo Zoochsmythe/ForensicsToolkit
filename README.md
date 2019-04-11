@@ -1,6 +1,7 @@
 # Zach's Forensics Toolkit
 Zach's Forensics Toolkit is a list of tools and their descriptions to aid in digital forensics and incident response tasks. These tools will help responders investigate cyber crime and assist in the foresnics process. Each of these tools are open-source and free to use. Links to their official documentation, as well as links to download are provided. 
 
+## CrowdStrike CrowdResponse
 ![Image of CrowdStrike](https://s3.amazonaws.com/awsmp-logos/CrowdStrike-02042016.png)
 CrowdStrike CrowdResponse is a lightweight Windows console application designed to aid in the gathering of system information for incident response and security engagements. The application contains numerous modules, each of them invoked by providing specific command line parameters to the main application.
 
@@ -28,7 +29,7 @@ Crowd Response results may be viewed in a variety of ways, particularly when lev
 #### Download: https://www.crowdstrike.com/resources/community-tools/crowdresponse/
 
 
-
+## WireShark
 ![Image of WireShark](https://i1.wp.com/ape-360.com/wp-content/uploads/2019/02/Wireshark-e1550856586947.png?fit=520%2C245&ssl=1)
 
 Wireshark is a network packet analyzer that captures network packets and tries to display that packet data as detailed as possible. As a forensic analyst, it is a powerful tool to analyze any malicious activity happening on the network from a compromised computer. 
@@ -37,3 +38,18 @@ Wireshark is a network packet analyzer that captures network packets and tries t
 You can download and install wireshark on both Windows and Linux and use it to capture network traffic on a machine. You can also import an existing pcap file to wireshark to see the nework traffic of the compromised machine. Within Wireshark you can customize what fields you see and also filter what types of packets are displayed. For a in-depth guide on the different packet filter options visit https://wiki.wireshark.org/DisplayFilters
 
 #### Download: https://www.wireshark.org/download.html
+
+## Autopsy + Sluethkit
+![Image of Autopsy](https://www.concise-courses.com/wp-content/uploads/2018/12/hacker-tool-autopsy-v1.png)
+
+Autopsy is a digital forensics platform and graphical interface to The Sleuth Kit® and other digital forensics tools. It is used by law enforcement, military, and corporate examiners to investigate what happened on a computer. It is designed to be intuitive and easy to use out of the box. 
+
+### Strengths
+Personally, the strongest part of Autopsy is the ability to find all files that match a specific string. It also allows for web history and web artifact display. 
+
+### Notes
+* It will take a long time to Ingest any Hard Drive images. Plan on it taking about 5-6 hours for 100G+
+* Autopsy is extensible: You can add 3rd party add ons. 
+
+#### Download: https://www.sleuthkit.org/autopsy/download.php
+
