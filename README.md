@@ -60,8 +60,11 @@ Volatility is an open source python tool for memory forensics in incident respon
 
 ### How to Use Volatility
 The most basic Volatility commands are constructed as shown below. Replace plugin with the name of the plugin to use, image with the file path to your memory image, and profile with the name of the profile (such as Win7SP1x64)
+
 ```$ python vol.py [plugin] -f [image] --profile=[profile]```
+
 Example:
+
 ```$ python vol.py pslist -f /path/to/memory.img --profile=Win7SP1x64```
 
 ### Notes:
